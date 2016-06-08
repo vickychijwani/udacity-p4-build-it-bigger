@@ -20,11 +20,11 @@ android {
 }
 
 dependencies {
-    compile project(':libjoke')
     compile project(':jokedisplay')
+    compile project(path: ':jokebackend', configuration: 'android-endpoints')
 
     compile fileTree(dir: 'libs', include: ['*.jar'])
     compile 'com.android.support:appcompat-v7:23.3.0'
     // Added for AdMob
-    compile 'com.google.android.gms:play-services:8.4.0'
+    compile 'com.google.android.gms:play-services-ads:9.0.2'
 }
